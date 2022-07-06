@@ -9,7 +9,7 @@
        */
       // Format: https://api.github.com/repos/{owner}/{repo}/issues/
       var GITHUB_ISSUES_LINK =
-        "https://api.github.com/repos/nelsontky/gh-pages-url-shortener-db/issues/";
+        "https://api.github.com/repos/lastknight/shortener/issues/";
       var PATH_SEGMENTS_TO_SKIP = 0;
 
       /**
@@ -75,4 +75,25 @@
     </script>
   </head>
   <body></body>
+  <!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+  _paq.push(["setCookieDomain", "*.matteoflora.com"]);
+  _paq.push(["setDomains", ["*.matteoflora.com","*.www.matteoflora.com","*.matteoflora.com","*.mgpf.it","*.www.matteoflora.com","*.www.mgpf.it"]]);
+  _paq.push(["enableCrossDomainLinking"]);
+  _paq.push(["disableCookies"]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//analytics.mgpf.it/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '3']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//analytics.mgpf.it/matomo.php?idsite=3&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Matomo Code -->
 </html>
